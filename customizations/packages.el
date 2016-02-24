@@ -19,6 +19,9 @@
   '(
     ;; git integration
     magit
+
+    ;; colorful parenthesis matching
+    rainbow-delimiters
     ))
 
 ;; On OS X, an Emacs instance started from the graphical user

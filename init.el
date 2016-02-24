@@ -19,6 +19,13 @@
 (load "packages.el")
 
 ;;
+;; Package configuration
+;;
+
+;; Turn on rainbow parens
+(global-rainbow-delimiters-mode t)
+
+;;
 ;; Other customizations
 ;;
 
@@ -31,13 +38,15 @@
 ;;
 ;; Helper functions
 ;;
+
+;; Reset key
 (defun my-reset-key (key func)
   (global-unset-key key)
   (global-set-key key func)
 )
 
 ;;
-;; Other customizations
+;; Other non-managed packages in vendor
 ;;
 
 ;; Load and set key-bindings for ascope
