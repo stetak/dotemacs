@@ -1,20 +1,44 @@
 ;; Turn on to debug
 ;(setq debug-on-error t)
 
-;; Include my own user load path
-(setq load-path  (cons (expand-file-name "~/.emacs.d/lisp/") load-path))
+;;
+;; .emacs.d path settings
+;;
 
-;; I have hit this key too many times
+;; Emacs Lisp files downloaded go here
+(add-to-list 'load-path "~/.emacs.d/vendor")
+
+;; Customizations go here
+(add-to-list 'load-path "~/.emacs.d/customizations")
+
+;;
+;; Package management
+;;
+
+;; Setup packages before we start modifying them
+(load "packages.el")
+
+;;
+;; Other customizations
+;;
+
+;; Turn off accidental quit
 (global-unset-key "\C-x\C-c")
 
-;; I don't want the toolbar
+;; Dont show toolbar
 (tool-bar-mode 0)
 
-;; Helper function to unset and set a key
+;;
+;; Helper functions
+;;
 (defun my-reset-key (key func)
   (global-unset-key key)
   (global-set-key key func)
 )
+
+;;
+;; Other customizations
+;;
 
 ;; Load and set key-bindings for ascope
 (load "ascope")
