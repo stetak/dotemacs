@@ -23,7 +23,7 @@
 ;;
 
 ;; Turn on rainbow parens
-(global-rainbow-delimiters-mode t)
+;;(global-rainbow-delimiters-mode t)
 
 ;;
 ;; Other customizations
