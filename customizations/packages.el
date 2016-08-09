@@ -22,6 +22,9 @@
 
     ;; colorful parenthesis matching
     rainbow-delimiters
+
+    ;; go-mode
+    go-mode
     ))
 
 ;; On OS X, an Emacs instance started from the graphical user
