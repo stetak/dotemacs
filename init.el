@@ -50,7 +50,8 @@
 ;;
 
 ;; Load and set key-bindings for ascope
-(load "ascope")
+;; No longer working as of Jun 2024
+;;(load "ascope")
 
 (my-reset-key (kbd "C-c a o") 'ascope-init)
 (my-reset-key (kbd "C-c a g") 'ascope-find-global-definition)

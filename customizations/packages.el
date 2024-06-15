@@ -1,11 +1,11 @@
 ;; Package repos
 (require 'package)
+;;(add-to-list 'package-archives
+;;             '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (add-to-list 'package-archives
-             '("marmalade" . "http://marmalade-repo.org/packages/") t)
-(add-to-list 'package-archives
-             '("tromey" . "http://tromey.com/elpa/") t)
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+             '("tromey" . "https://tromey.com/elpa/") t)
+;;(add-to-list 'package-archives
+;;             '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
 ;; Initialize package management
 (package-initialize)
@@ -21,10 +21,10 @@
     magit
 
     ;; colorful parenthesis matching
-    rainbow-delimiters
+    ;;rainbow-delimiters
 
     ;; go-mode
-    go-mode
+    ;;go-mode
     ))
 
 ;; On OS X, an Emacs instance started from the graphical user
@@ -45,8 +45,8 @@
 ;; Package customizations
 
 ;; go-mode
-(add-hook 'go-mode-hook
-	  (lambda()
+;;(add-hook 'go-mode-hook
+;;	  (lambda()
 ;;	    (add-hook 'before-save-hook 'gofmt-before-save)
-	    (setq tab-width 4)
-	    (setq indent-tabs-mode 1)))
+;;	    (setq tab-width 4)
+;;	    (setq indent-tabs-mode 1)))
