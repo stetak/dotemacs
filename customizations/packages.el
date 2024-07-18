@@ -33,7 +33,7 @@
     magit
 
     ;; colorful parenthesis matching
-    rainbow-delimiters
+    ;;rainbow-delimiters
 
     ;; igrep
     ;; igrep - not sure where this came from, but not in current package lists
